@@ -10,7 +10,7 @@ let floatArray = [];
 
 do {
     inputData = prompt( 'Введите данные');
-    if (inputData !== null) {
+    if (inputData !== null && inputData !== '') {
         temp = inputData;
         converted = Number(inputData);
         if (Number.isNaN(converted)) {
