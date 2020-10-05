@@ -1,0 +1,43 @@
+.containerOfButton {
+    display: flexbox;
+}
+
+.elementOfList {
+    background-color: beige;
+    padding: 10px;
+}
+
+button {
+    box-shadow: 0;
+    border: none;
+}
+
+.delete-li {
+    background-color: brown;
+    color: #fff;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.main-button {
+    color: #fff;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.add {
+    background-color: green;
+}
+
+.clear {
+    background-color: palevioletred;
+}
+
+.test {
+    border: 3px solid red;
+    padding: 40px;
+}
