@@ -1,0 +1,153 @@
+
+.your-class {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+button {
+    box-shadow: none;
+    border: none;
+}
+
+#slides{
+    position: relative;
+    height: 700px;
+    padding: 0px;
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    min-height: 500px;
+    opacity: 0;
+    z-index: 1;
+    height: 700px;
+    cursor: pointer;
+    
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing{
+    opacity: 1;
+    z-index: 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide{
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+
+
+.controls {
+    background-color: rgba(187, 137, 184, 0.548);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 340px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.controls:hover {
+    transform: scale(1.2);
+}
+
+.controls:focus {
+    outline: none;
+}
+
+#previous {
+    left: 55px;
+    background-image: url(./img/previous.png);
+}
+
+#next {
+    right: 55px;
+    background-image: url(./img/next.png);
+}
+
+.container-mini {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.mini {
+    width: 90px;
+    height: 90px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 9px;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+.mini:hover {
+    box-shadow: 0 0 1px 4px rgba(64, 23, 75, 0.5);
+    transform: scale(1.2);
+}
+.img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#modal-style {
+    width: 1300px;
+    height: 700px;
+    background-color: rgba(187, 137, 184, 1);
+    border: 10px solid #fff;
+    border-radius: 10px;
+    position: relative;
+    z-index: 20;
+    margin: 100px auto;
+}
+
+#wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 15;
+}
+
+.style-close-button {
+    border-radius: 50%;
+    background-color: rgb(114, 69, 111);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    border: 1px solid #fff;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.style-close-button:hover {
+    transform: scale(1.2);
+}
