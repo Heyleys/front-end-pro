@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper {width: 920px; margin: 0 auto}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.item {
+    width: 80%;
+    display: inline-block;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[type="checkbox"]{
+    width: 5%;
+}
+
+.crossed {
+    text-decoration: line-through;
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.header {
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+.todo_list {
+    background-color: #5187ce;
+}
+
+.done_list {
+    background-color: #51b65e;
+}
+
+.removed_list {
+    background-color:#cc463c;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input {
+    border: none;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background-color: #dd82b7;
+    color: rgb(240, 240, 240);
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.addBtn:hover {
+    background-color: rgb(26, 110, 51);
+}
+
+.delete-button {
+    border-radius: 50%;
+    background-color: #aa2c2c;
+    color: #fff;
+    border: none;
+    padding: 4px 6px;
+    cursor: pointer;
+}
