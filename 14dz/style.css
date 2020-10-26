@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    border: none;
+    background-color: none;
+}
+
+input {
+    outline: none;
+}
+
+.form-comment {
+    background-color: #c980b3;
+    color: #5f4357;
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+    width: 800px;
+    display: flex;
+    margin: auto;
+}
+
+.comment {
+    display: block;
+    margin-bottom: 10px;
+    width: 770px;
+    border-radius: 5px;
+    border: 1px solid #a17d97;
+    padding: 10px;
+    outline: none;
+}
+
+.user-name {
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #a17d97;
+    padding: 10px;
+    width: 200px;
+}
+
+.send-button {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #5f4357;
+    color: aliceblue;
+    width: 200px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    display: block;
+}
+
+.user-name:focus {
+    box-shadow: 0 0 0 1px #5f4357;    
+}
+
+.comment:focus {
+    box-shadow: 0 0 0 1px #5f4357;    
+}
+
+.place-style::-webkit-input-placeholder {
+    color: #a0879c;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+.send-button:hover {
+    background-color: #9b728f;
+}
+
+.comment-list {
+    background-color: #f5d4eb;
+    padding: 15px;
+    width: 800px;
+    margin: auto;
+}
+
+.new-comment {
+    background-color: #f5edf3;
+    border-radius: 5px;
+    padding: 15px;
+    color: #5f4357;
+    margin-bottom: 15px;
+}
+
+.comment-button {
+    justify-content: space-between;
+    display: flex;
+    width: 182px;
+}
+
+.button-wrapper {
+    justify-content: space-between;
+    display: flex;
+}
+
+.edit, .delete {
+    color: #5f4357;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+}
+
+.delete:hover {
+    text-decoration: underline;
+}
+
+.edit:hover {
+    text-decoration: underline;
+}
+
+.comment-body {
+    font-size: 13px;
+}
+
+.edited {
+    font-size: 13px;
+    color: #a796a2;
+}
+
+.date {
+    color: #a796a2;
+    font-weight: 600;
+    font-size: 13px;
+    float: right;
+}
+
+.name {
+    color: #9b728f;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.modal-wrapper {
+    width: 600px;
+    min-height: 340px;
+    background-color: #c980b3;
+    border-radius: 5px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    padding: 20px;
+}
+
+.edit-comment {
+    width: 560px;
+}
+
+.cancel {
+    background-color: #632931;
+    display: inline-block;
+}
+
+.error {
+    color: rgb(116, 16, 63);
+    font-size: 13px;
+}
+
+.valid_comment {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.valid_name {
+    display: block;
+}
+
+.view {
+    display: block;
+}
+
+.save {
+    display: inline-block;
+}
