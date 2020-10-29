@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 13</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script defer src="./scripts.js"></script>
+</head>
+<body>
+    <div id="comment-list" class="comment-list">
+        <div class="new-comment">
+            <span class="name">{{comment_name}}</span>
+            <time class="date">{{comment_date}}</time>
+            <p class="comment-body">{{comment_body}}</p>
+            <div class="button-wrapper">
+                <span class="edited">{{comment_isEdited}}</span>
+                <div class="comment-button">
+                    <button class="edit" id="edit">Редактировать</button>
+                    <span class="">|</span>
+                    <button class="delete">Удалить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-comment">
+        <form action="">
+            <input required type="text" class="user-name place-style" id="user_name" placeholder="Ваше имя">
+            <textarea required name="comment" cols="30" rows="10" id="comment" class="comment place-style" placeholder="Введите Ваш комментарий..."></textarea>
+            <button id="makeBold" class="edit-text bold">Жирный</button>
+            <button id="makeCursive" class="edit-text italic">Курсив</button>
+            <button id="makeCrossed" class="edit-text line">Перечеркнуть</button>
+            <div id="errors">
+            </div>
+            <button type="button" class="send-button" id="send_button">Отправить</button>
+        </form>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-wrapper">
+            <form action="" class="edit-form">
+                <input type="text" id="edit-modal-name"class="edit-name user-name place-style">
+                <textarea name="" id="edit-modal-body" cols="30" rows="10" class="edit-comment comment place-style"></textarea>
+                <input type="hidden" id="edit-comment-id">
+                <button class="save send-button" id="editCommentButton" type="button">Сохранить</button>
+                <button class="cancel send-button" id="cancel_button" type="button">Отмена</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
