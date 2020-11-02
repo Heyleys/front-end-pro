@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.alarm-clock {
+    color: #ffffff;
+    background-color: #ec9ac0;
+    padding: 20px 20px 20px 40px;
+    margin: auto;
+    width: 540px;
+    border-radius: 10px;
+    border: 10px solid #fcfcfc;
+    box-shadow: 0 0 14px -4px #000000;
+}
+
+.time {
+    font-size: 100px;
+    margin: auto;
+    width: 480px;
+}
+
+.colon {
+    animation-name: blinker;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    animation-duration: 1s;
+    -webkit-animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    -webkit-animation-duration: 1s;
+}
+
+@keyframes blinker {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+  }
+   
+  @-webkit-keyframes blinker {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+  }
+
+
+
