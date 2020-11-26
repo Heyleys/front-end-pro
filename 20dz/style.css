@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+    outline: none;
+}
+
+body {
+    height:100%;
+}
+
+.clearfix:after{
+    Content: "";
+    Display:table;
+    clear: both;
+}
+
+.container {
+    width: 400px;
+    display: block;
+    margin: auto;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.open_bot {
+    background-color: #723581;
+    border-radius: 50%;
+    width:50px;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 0 0;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.open_bot:hover {
+    box-shadow: 0px 0px 0px 15px rgba(92, 35, 83, 0.5);
+}
+
+.chat_container {
+    min-height: 500px;
+    background-color: #cdbbee;
+    border-radius: 5px 5px 0px 0px;
+    padding-top: 10px;
+}
+
+.chat_container::before {
+    content: "";
+    overflow: hidden;
+    display: block;
+}
+
+.input_message {
+    display: flex;
+    align-items: center;
+    min-height: 75px;
+    background-color: #7962a5;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.message {
+    width: 310px;
+    min-height: 50px;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #cdbbee;
+    margin: 10px 5px 10px 10px;
+    border-radius: 5px;
+}
+
+.send_message {
+    border: none;
+    border-radius: 50%;
+    background-color: #a278f0;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 10px;
+    background-image: url(./send.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.send_message:hover {
+   background-color: #b696f0;
+}
+
+.send_message:active {
+    background-color: #a98fd8;
+}
+
+.message_style {
+    border-radius: 5px;
+    max-width: 310px;
+    padding: 5px 10px 5px 10px; 
+    overflow: hidden;
+}
+
+.bot {
+    background-color: #a278f0;
+    color: aliceblue;
+    width: 80%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.human {
+    background: #ecdbff;
+    color: rgb(33, 14, 48);
+    width: 80%;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+
