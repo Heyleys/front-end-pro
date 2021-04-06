@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    animation-name: animation;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform: scale(1);
+    top: 20px;
+}
+
+.c1 {
+    animation-delay: 0.1;
+    background-color: #f4c2c2;
+}
+
+.c2 {
+    left: 50px;
+    animation-delay: 0.4s;
+    background-color: #dbaeae;
+}
+
+.c3 {
+    left: 93px;
+    animation-delay: 0.7s;
+    background-color: #c39b9b;
+}
+
+@keyframes animation {
+    0% {
+        top: 20px;
+    }
+
+    50% {
+        opacity: 50%;
+        transform: scale(1);
+    }
+
+    100% {
+        top: 10px;
+    }
+}

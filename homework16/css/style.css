@@ -1,0 +1,108 @@
+/* line 1, ../../../../../Desktop/frontend/homework16/scss/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 5, ../../../../../Desktop/frontend/homework16/scss/style.scss */
+body {
+  width: 320px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 11, ../../../../../Desktop/frontend/homework16/scss/style.scss */
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+/* line 15, ../../../../../Desktop/frontend/homework16/scss/style.scss */
+.font2 {
+  font-family: 'Rubik', sans-serif;
+}
+
+/* line 19, ../../../../../Desktop/frontend/homework16/scss/style.scss */
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* line 25, ../../../../../Desktop/frontend/homework16/scss/style.scss */
+.wrapper {
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 31, ../../../../../Desktop/frontend/homework16/scss/style.scss */
+.main {
+  background-image: url(../img/background-main.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 65px;
+}
+
+/* line 41, ../../../../../Desktop/frontend/homework16/scss/style.scss */
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* line 47, ../../../../../Desktop/frontend/homework16/scss/style.scss */
+.burger-menu {
+  margin-left: auto;
+  background-image: url(../img/burger.png);
+  width: 25px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 56, ../../../../../Desktop/frontend/homework16/scss/style.scss */
+.main-img {
+  width: 290px;
+  height: 290px;
+  background-image: url(../img/main-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+
+/* line 65, ../../../../../Desktop/frontend/homework16/scss/style.scss */
+.main-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* line 71, ../../../../../Desktop/frontend/homework16/scss/style.scss */
+.main-button {
+  width: 290px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #fb0275;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+/* line 83, ../../../../../Desktop/frontend/homework16/scss/style.scss */
+.main-text {
+  margin-bottom: 45px;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+/* line 89, ../../../../../Desktop/frontend/homework16/scss/style.scss */
+.main-paragraph {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=style.css.map */

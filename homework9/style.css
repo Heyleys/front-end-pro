@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 5000px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    background-color: #000000;
+    text-transform: uppercase;
+    background-image: url(./img/background.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: initial;
+    font-size: 14px;
+}
+
+.container-link {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forget-password {
+    color: #000000;
+}
+
+.form {
+    width: 460px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -230px;
+    transform: translateY(-50%);
+    padding: 40px 80px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.close {
+    background-image: url(./img/exit.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 9px;
+    right: -33px;
+}
+
+.input {
+    height: 40px;
+    width: 300px;
+    border: 2px solid #000000;
+    padding: 10px 35px 10px 10px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+}
+
+.container-input {
+    position: relative;
+}
+
+.log::after {
+    content: url(./img/login-icon.png);
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+}
+
+.pass::after {
+    content: url(./img/password-icon.png);
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+}
+
+.log {
+    margin-bottom: 9px;
+}
+
+.pass {
+    margin-bottom: 20px;
+}
+
+.input::placeholder {
+    color: #000000;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    margin: 0px;
+}
+
+.title-form {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.label-input {
+    margin-bottom: 18px;
+    display: inline-block;
+}
+
+.button-form {
+    width: 300px;
+    height: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+}
+

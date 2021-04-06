@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #755e4a;
+    color: #ffffff;
+    font-family: "Open Sans";
+    margin: 0px;
+    padding-top: 48px;
+    padding-bottom: 77px;
+    background-image: url(./img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 0px;
+}
+
+
+.header {
+    margin-bottom: 220px;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 478px;
+}
+
+.logo img  {
+    display: block;
+}
+
+.wrapper {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;  
+    line-height: 15px;
+    display: inline-block;
+    padding: 7px 14px;
+    border: 1px solid transparent;
+}  
+
+.active {
+    border: 1px solid #ffffff;
+    border-radius: 17px;
+    
+}
+
+.menu-link:hover {
+    border-color:#ffffff;
+    border-radius: 17px;
+}
+
+.title, .text {
+    margin: 0px;
+}
+
+.title {
+    margin-bottom: 27px;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    line-height: 70px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.text-content {
+    width: 630px;
+    margin-left: auto;   /*поставила марджины т.к. text align не сцентровал блок*/
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 220px;  
+}
+
+.scroll-button {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    border: none;
+    background-color: #19bd9a;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./img/arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 12px 7px;
+}

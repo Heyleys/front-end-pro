@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>wristwatch</title>
+	<link rel="stylesheet" href="./normalize.css">
+	<link rel="stylesheet" href="./style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<a href=""><img class="logo" src="./img/logo.png" alt="logo company"></a>
+			<nav class="navigation">
+				<a href="" class="menu-link active-link">Каталог</a>
+				<a href="" class="menu-link">Акции</a>
+				<a href="" class="menu-link">Доставка</a>
+				<a href="" class="menu-link">Контакты</a>
+			</nav>
+			<div class="header-menu">
+				<a href="" class="header-link find"></a>
+				<a href="" class="header-link favorites">
+				<a href="" class="header-link cart"></a>
+			</div>
+		</header>
+		<a href="" class="direction-link">Главная</a>
+		<a href="" class="direction-link">Каталог</a>
+		<a href="" class="direction-link">Мужские часы</a>
+		<a href="" class="direction-link direction-active">Georg Jensen</a>
+		<div class="card-product">
+			<div class="photos-product">
+				<div class="select-photo">
+					<img class="product-photo" src="./img/watch_card_1.png" alt="photo product">
+					<button class="preview photo-button" type="button"></button>
+					<button class="next photo-button" type="button"></button>
+				</div>
+				<div class="all-photo">
+					<div class="photo-container">
+						<img class="product-photo" src="./img/watches_2.jpg" alt="photo product" class="photo">
+						<div class="photo-effect"></div>
+					</div>
+					<div class="photo-container">
+						<img class="product-photo" src="./img/watches_3.png" alt="photo product" class="photo">
+						<div class="photo-effect"></div>
+					</div>
+					<div class="photo-container">
+						<img class="product-photo" src="./img/watches_4.png" alt="photo product" class="photo">
+						<div class="photo-effect"></div>
+					</div>
+					<div class="photo-container">
+						<img class="product-photo" src="./img/watches_5.png" alt="photo product" class="photo">
+						<div class="photo-effect"></div>
+					</div>	
+				</div>
+			</div>
+			<div class="info-product">
+				<header class="header-product">
+					<h1 class="product-name">KULTE, 26 ММ</h1>
+					<button type="button" class="line"></button>
+					<button type="button" class="add-favorites"></button>	
+				</header>
+				<p class="product-price">12 700 <span class="ruble"></span></p>
+				<button type="button" class="product-menu product-menu-active">Описание</button>
+				<button type="button" class="product-menu">Технические характеристики</button>
+				<div class="description">
+					<p class="paragraph">Наручные часы KULTE, разработанные датским дизайнером Хэннингом Коппелем, были выпущены в 1982 году. Они были встречены аплодисментами, а дизайн считался революционным.</p>
+					<p class="paragraph">Общая эстетика минималистична, а острые, плавные линии корпуса стали легендарными. Механизм Swiss Made обеспечивает высокий уровень технических характеристик.</p>
+					<p class="paragraph">Наручные часы KULTE — это образец датского дизайнерского наследия, история баланса и точности как внутри, так и снаружи.</p>
+				</div>
+				<button class="add-cart">В КОРЗИНУ</button>
+			</div>
+		</div>
+		<h2 class="products-title font2">Вы смотрели</h2>
+		<section class="products">
+			<button class="preview-product photo-button" type="button"></button>
+			<button class="next-product photo-button" type="button"></button>
+			<div class="products-item">
+				<header class="header-products ">
+					<h3 class="products-name">TECHNE</h3>
+					<button type="button" class="product-button add-favorites-product"></button>
+					<button type="button" class="product-button addcart-product"></button>
+					<p class="products-price">15 700 <span class="ruble-products"></span></p>
+				</header>
+				<img class="product-photo" src="./img/products1.png" alt="product photo">
+			</div>
+			<div class="products-item">
+				<header class="header-products">
+					<h3 class="products-name">TECHNE</h3>
+					<button type="button" class="product-button add-favorites-product"></button>
+					<button type="button" class="product-button addcart-product"></button>
+					<p class="products-price">15 700 <span class="ruble-products"></span></p>
+				</header>
+				<img class="product-photo" src="./img/products2.png" alt="product photo">
+			</div>
+			<div class="products-item">
+				<header class="header-products">
+					<h3 class="products-name">TECHNE</h3>
+					<button type="button" class="product-button add-favorites-product"></button>
+					<button type="button" class="product-button addcart-product"></button>
+					<p class="products-price">15 700 <span class="ruble-products"></span></p>
+				</header>
+				<img class="product-photo" src="./img/products3.png" alt="product photo">
+			</div>
+		</section>
+	</div>
+	<section class="footer">
+		<div class="wrapper footer-flex">
+			<div class="footer-column">
+				<a href="" class="logo-footer"><img src="./img/logo-footer.png" alt="logo"></a>
+				<p class="footer-text">8 (499) 450-47-97</p>
+				<p class="footer-text">info@conquest.watch.ru</p>
+			</div>
+			<div class="footer-column">
+				<h3 class="footer-title">О КОМПАНИИ</h3>
+				<a href="" class="footer-text">Наши магазины</a>
+				<a href="" class="footer-text">Вакансии</a>
+				<a href="" class="footer-text">Сертификаты</a>
+				<a href="" class="footer-text">Отзывы</a>
+			</div>
+			<div class="footer-column">
+				<h3 class="footer-title">ПОКУПАТЕЛЯМ</h3>
+				<a href="" class="footer-text">Каталог товаров</a>
+				<a href="" class="footer-text">Как заказать?</a>
+				<a href="" class="footer-text">FAQ</a>
+				<a href="" class="footer-text">Корпоративным клиентам</a>
+			</div>
+			<div class="footer-column">
+				<h3 class="footer-title">ОПЛАТА И ДОСТАВКА</h3>
+				<a href="" class="footer-text">Способы оплаты</a>
+				<a href="" class="footer-text">Время доставки</a>
+				<a href="" class="footer-text">Гарантии и ремонт</a>
+				<a href="" class="footer-text">Возврат и компенсация</a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

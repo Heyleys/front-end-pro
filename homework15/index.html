@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>wristwatch-catalog</title>
+	<link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<a href=""><img class="logo" src="./img/logo.png" alt="logo company"></a>
+			<nav class="navigation">
+				<a href="" class="menu-link active-link">Каталог</a>
+				<a href="" class="menu-link">Акции</a>
+				<a href="" class="menu-link">Доставка</a>
+				<a href="" class="menu-link">Контакты</a>
+			</nav>
+			<div class="header-menu">
+				<a href="" class="header-link find"></a>
+				<a href="" class="header-link favorites"></a>
+				<a href="" class="header-link cart"></a>
+			</div>
+		</header>
+		<nav class="direction">
+			<a href="" class="direction-link">Главная</a>
+			<a href="" class="direction-link">Каталог</a>
+			<a href="" class="direction-link active-direction">Мужские часы</a>
+		</nav>
+		<div class="container">
+			<h1 class="title-page font2">Мужские часы</h1>
+			<div class="sorting">
+				<label class="sorting-text" for="sort">Сортировать по:</label>
+				<select name="" id="sort" class="sorting-field">
+					<option value="">популярности</option>
+					<option value="">дате</option>
+					<option value="">рейтингу</option>
+        		</select>
+			</div>
+		</div>
+		<div class="column">
+			<form class="filter">
+				<div class="cost">
+					<header class="header-filter">
+						<p class="filter-name">Стоимость</p>
+						<button class="open-close" type="button">
+							<svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 1L10.075 1" stroke="#1B1A17"/>
+							</svg>
+						</button>
+					</header>
+					<div class="switch">
+						<span class="cost-inactive"><span class="cost-active"></span></span>
+						<button class="cost-button left-switch" type="button"></button>
+						<button class="cost-button right-switch" type="button"></button>
+						<div class="cost-price min-price"><input type="text" value="12 000" class="price-input"></div>
+						<div class="cost-price max-price"><input type="text" value="19 000" class="price-input"></div>
+					</div>
+				</div>
+				<div class="brand">
+					<header class="header-filter">
+						<p class="filter-name">Бренд</p>
+						<button class="open-close" type="button">
+							<svg width="11" height="2" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 1L10.075 1" stroke="#1B1A17"/>
+							</svg>
+						</button>
+					</header>
+					<div class="point">
+            			<input class="checkbox" type="checkbox" name="Techne" id="Techne">
+					  	<label class="brand-point" for="Techne">Techne</label>
+					</div>
+					<div class="point">
+						<input class="checkbox" type="checkbox" name="Rado" id="Rado">
+						<label class="brand-point" for="Rado">Rado</label>
+					</div>
+					<div class="point">
+						<input class="checkbox" type="checkbox" name="BVlgari" id="BVlgari">
+						<label class="brand-point" for="BVlgari">BVlgari</label>
+					</div>
+					<div class="point">
+						<input class="checkbox" type="checkbox" name="Tissot" id="Tissot">
+						<label class="brand-point" for="Tissot">Tissot</label>
+					</div>
+					<div class="point">
+						<input class="checkbox" type="checkbox" name="Omega" id="Omega">
+						<label class="brand-point" for="Omega">Omega</label>
+					</div>
+					<div class="point">
+						<input class="checkbox" type="checkbox" name="Montblanc" id="Montblanc">
+						<label class="brand-point" for="Montblanc">Montblanc</label>
+					</div>
+				</div>
+				<div class="mechanism">
+					<header class="header-filter">
+						<p class="filter-name">Механизм</p>
+						<button class="open-close" type="button">
+							<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.66248 0V10" stroke="#1B1A17"/>
+								<path d="M0.625 5L10.7 5" stroke="#1B1A17"/>
+							</svg>
+						</button>
+					</header>
+				</div>
+				<div class="material">
+					<header class="header-filter">
+						<p class="filter-name">Материал</p>
+						<button class="open-close" type="button">
+							<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.66248 0V10" stroke="#1B1A17"/>
+								<path d="M0.625 5L10.7 5" stroke="#1B1A17"/>
+							</svg>
+						</button>
+					</header>
+				</div>
+				<div class="color">
+					<header class="header-filter">
+						<p class="filter-name">Цвет</p>
+						<button class="open-close" type="button">
+							<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.66248 0V10" stroke="#1B1A17"/>
+								<path d="M0.625 5L10.7 5" stroke="#1B1A17"/>
+							</svg>
+						</button>
+					</header>
+        		</div>
+        		<button type="reset" class="filter-reset">СБРОСИТЬ ФИЛЬТР</button>
+			</form>
+			<div class="products">
+				<div class="products-item">
+					<header class="header-products">
+						<h3 class="products-name">TECHNE</span></p></h3>
+						<button type="button" class="product-button add-favorites-product"></button>
+						<button type="button" class="product-button addcart-product"></button>
+						<p class="products-price">15 700 <span class="ruble-products"></span>
+					</header>
+					<img class="product-photo" src="./img/products1.png"  height="" alt="product photo">
+				</div>
+				<div class="products-item">
+					<header class="header-products">
+						<h3 class="products-name">TECHNE</h3>
+						<button type="button" class="product-button add-favorites-product"></button>
+						<button type="button" class="product-button addcart-product"></button>
+						<p class="products-price">15 700 <span class="ruble-products"></span></p>
+					</header>
+					<img class="product-photo" src="./img/products2.png"  height="" alt="product photo">
+				</div>
+				<div class="products-item">
+					<header class="header-products">
+						<h3 class="products-name">TECHNE</h3>
+						<button type="button" class="product-button add-favorites-product"></button>
+						<button type="button" class="product-button addcart-product"></button>
+						<p class="products-price">15 700 <span class="ruble-products"></span></p>
+					</header>
+					<img class="product-photo" src="./img/products3.png"  height="" alt="product photo">
+        		</div>
+       			<div class="products-item">
+					<header class="header-products">
+						<h3 class="products-name">TECHNE</h3>
+						<button type="button" class="product-button add-favorites-product"></button>
+						<button type="button" class="product-button addcart-product"></button>
+						<p class="products-price">15 700 <span class="ruble-products"></span></p>
+					</header>
+					<img class="product-photo" src="./img/products4.png"  height="" alt="product photo">
+				</div>
+				<div class="products-item">
+					<header class="header-products">
+						<h3 class="products-name">TECHNE</h3>
+						<button type="button" class="product-button add-favorites-product"></button>
+						<button type="button" class="product-button addcart-product"></button>
+						<p class="products-price">15 700 <span class="ruble-products"></span></p>
+					</header>
+					<img class="product-photo" src="./img/products5.png"  height="" alt="product photo">
+				</div>
+				<div class="products-item banner">
+        		</div>
+       			<div class="products-item">
+					<header class="header-products">
+						<h3 class="products-name">TECHNE</h3>
+						<button type="button" class="product-button add-favorites-product"></button>
+						<button type="button" class="product-button addcart-product"></button>
+						<p class="products-price">15 700 <span class="ruble-products"></span></p>
+					</header>
+					<img class="product-photo" src="./img/products6.png"  height="" alt="product photo">
+				</div>
+				<div class="products-item">
+					<header class="header-products">
+						<h3 class="products-name">TECHNE</h3>
+						<button type="button" class="product-button add-favorites-product"></button>
+						<button type="button" class="product-button addcart-product"></button>
+						<p class="products-price">15 700 <span class="ruble-products"></span></p>
+					</header>
+					<img class="product-photo" src="./img/products7.png"  height="" alt="product photo">
+				</div>
+				<div class="products-item">
+					<header class="header-products">
+						<h3 class="products-name">TECHNE</h3>
+						<button type="button" class="product-button add-favorites-product"></button>
+						<button type="button" class="product-button addcart-product"></button>
+						<p class="products-price">15 700 <span class="ruble-products"></span></p>
+					</header>
+					<img class="product-photo" src="./img/products8.png"  height="" alt="product photo">
+        		</div>
+        		<div class="products-item">
+					<header class="header-products">
+						<h3 class="products-name">TECHNE</h3>
+						<button type="button" class="product-button add-favorites-product"></button>
+						<button type="button" class="product-button addcart-product"></button>
+						<p class="products-price">15 700 <span class="ruble-products"></span></p>
+					</header>
+					<img class="product-photo" src="./img/products9.png"  height="" alt="product photo">
+				</div>
+				<div class="products-item">
+					<header class="header-products">
+						<h3 class="products-name">TECHNE</h3>
+						<button type="button" class="product-button add-favorites-product"></button>
+						<button type="button" class="product-button addcart-product"></button>
+						<p class="products-price">15 700 <span class="ruble-products"></span></p>
+					</header>
+					<img class="product-photo" src="./img/products10.png"  height="" alt="product photo">
+				</div>
+				<div class="products-item">
+					<header class="header-products">
+						<h3 class="products-name">TECHNE</h3>
+						<button type="button" class="product-button add-favorites-product"></button>
+						<button type="button" class="product-button addcart-product"></button>
+						<p class="products-price">15 700 <span class="ruble-products"></span></p>
+					</header>
+					<img class="product-photo" src="./img/products11.png"  height="" alt="product photo">
+				</div>
+      		</div>
+    	</div>
+		<div class="switch-pages">
+			<a href="" class="preview-page page-button"></a>
+			<a href="" class="pages page">1</a>
+			<a href="" class="pages page">2</a>
+			<a href="" class="pages page active-page">3</a>
+			<a href="" class="pages other-pages">...</a>
+			<a href="" class="pages page">12</a>
+			<a href="" class="next-page page-button"></a>
+		</div>
+  </div>
+  <section class="call-to-action">
+    <div class="wrapper form-container">
+      <div>
+        <p class="form-text">Подписаться на рассылку</p>
+        <h2 class="form-title font2">Получить скидку 10% на первую покупку</h2>
+      </div>
+      <form class="form-subscribe" action="" method="POST" class="">
+        <input class="subscribe-field" type="text" placeholder="Email">
+        <button class="subscribe-button" type="submit">Подписаться</button>
+      </form>
+    </div>
+  </section>
+  <section class="view">
+    <div class="wrapper">
+      <div class="container">
+        <h1 class="title-page font2">Ремешки</h1>
+        <div class="view-title">
+          <button class="view-button" type="button">Смотреть все</button>
+        </div>
+      </div>
+      <div class="view-products">
+        <button class="preview-product photo-button" type="button"></button>
+        <button class="next-product photo-button" type="button"></button>
+        <div class="products-item view-item">
+			<header class="header-products view-header">
+				<h3 class="products-name view-name">TECHNE</h3>
+				<button type="button" class="product-button add-favorites-product"></button>
+				<button type="button" class="product-button addcart-product"></button>
+				<p class="products-price ">15 700 <span class="ruble-products"></span></p>
+			</header>
+        	<img class="product-photo" src="./img/viewprod1.png"  height="" alt="product photo">
+        </div>
+        <div class="products-item view-item">
+			<header class="header-products view-header">
+				<h3 class="products-name view-name">TECHNE</h3>
+				<button type="button" class="product-button add-favorites-product"></button>
+				<button type="button" class="product-button addcart-product"></button>
+				<p class="products-price">15 700 <span class="ruble-products"></span></p>
+			</header>
+        	<img class="product-photo" src="./img/viewprod2.png"  height="" alt="product photo">
+        </div>
+        <div class="products-item view-item">
+			<header class="header-products view-header">
+				<h3 class="products-name view-name">TECHNE</h3>
+				<button type="button" class="product-button add-favorites-product"></button>
+				<button type="button" class="product-button addcart-product"></button>
+				<p class="products-price">15 700 <span class="ruble-products"></span></p>
+			</header>
+        	<img class="product-photo" src="./img/viewprod3.png"  height="" alt="product photo">
+        </div>
+      </div>  
+    </div>
+  </section>
+	<section class="footer">
+		<div class="wrapper footer-flex">
+			<div class="footer-column">
+				<a href="" class="logo-footer"><img src="./img/logo-footer.png" alt="logo"></a>
+				<p class="footer-text">8 (499) 450-47-97</p>
+				<p class="footer-text">info@conquest.watch.ru</p>
+			</div>
+			<div class="footer-column">
+				<h3 class="footer-title">О КОМПАНИИ</h3>
+				<a href="" class="footer-text">Наши магазины</a>
+				<a href="" class="footer-text">Вакансии</a>
+				<a href="" class="footer-text">Сертификаты</a>
+				<a href="" class="footer-text">Отзывы</a>
+			</div>
+			<div class="footer-column">
+				<h3 class="footer-title">ПОКУПАТЕЛЯМ</h3>
+				<a href="" class="footer-text">Каталог товаров</a>
+				<a href="" class="footer-text">Как заказать?</a>
+				<a href="" class="footer-text">FAQ</a>
+				<a href="" class="footer-text">Корпоративным клиентам</a>
+			</div>
+			<div class="footer-column">
+				<h3 class="footer-title">ОПЛАТА И ДОСТАВКА</h3>
+				<a href="" class="footer-text">Способы оплаты</a>
+				<a href="" class="footer-text">Время доставки</a>
+				<a href="" class="footer-text">Гарантии и ремонт</a>
+				<a href="" class="footer-text">Возврат и компенсация</a>
+			</div>
+		</div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,747 @@
+@charset "UTF-8";
+/* line 26, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 30, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding-top: 30px;
+}
+
+/* line 36, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 40, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+h1, h2, h3, h4, p {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 45, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.font2 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* line 49, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* line 55, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.wrapper {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 61, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+/* line 68, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.menu-link {
+  color: #444240;
+  margin-right: 65px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+/* line 74, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.menu-link:hover {
+  color: #E7E0CF;
+}
+
+/* line 78, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.menu-link:last-child {
+  margin-right: 0;
+}
+
+/* line 83, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.active-link {
+  color: #E7E0CF;
+}
+
+/* line 87, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.header-link {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 25px;
+}
+
+/* line 94, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.header-link:last-child {
+  margin-right: 0;
+}
+
+/* line 99, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.find {
+  background-image: url(../img/find.svg);
+}
+
+/* line 103, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.favorites {
+  background-image: url(../img/favorites.svg);
+  position: relative;
+}
+
+/* line 107, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.favorites::after {
+  content: '1';
+  width: 13px;
+  height: 13px;
+  font-size: 8px;
+  font-weight: 500;
+  color: #1B1A17;
+  border-radius: 50%;
+  background-color: #E7E0CF;
+  position: absolute;
+  top: -4px;
+  right: -7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 125, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.cart {
+  background-image: url(../img/cart.svg);
+}
+
+/* line 129, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.direction {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+/* line 134, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.direction .direction-link {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #BDB9B5;
+}
+
+/* line 140, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.direction .direction-link::after {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 7px;
+  background-image: url(../img/arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* line 151, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.direction .direction-link:hover {
+  color: #444240;
+}
+
+/* line 155, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.direction .direction-link:last-child {
+  margin-right: 0;
+}
+
+/* line 160, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.direction .active-direction {
+  color: #444240;
+}
+
+/* line 163, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.direction .active-direction::after {
+  display: none;
+}
+
+/* line 169, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  align-items: center;
+}
+
+/* line 175, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.container .title-page {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1B1A17;
+}
+
+/* line 182, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.container .sorting {
+  position: relative;
+}
+
+/* line 185, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.container .sorting .sorting-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #BDB9B5;
+}
+
+/* line 191, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.container .sorting .sorting-field {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1B1A17;
+  border: none;
+  background: none;
+  width: 110px;
+  -webkit-appearance: none;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+/* line 203, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.container .sorting::after {
+  content: '';
+  background: url("../img/arrow-select.svg") no-repeat right center;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  z-index: -1;
+}
+
+/* line 217, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.column {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 222, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.filter {
+  width: 235px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 228, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.header-filter {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+/* line 232, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.header-filter .filter-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444240;
+}
+
+/* line 238, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.header-filter .open-close {
+  width: 12px;
+  height: 12px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* line 246, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.point {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #6F6E6D;
+  margin-bottom: 20px;
+}
+
+/* line 252, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.point:last-child {
+  margin-bottom: 35px;
+}
+
+/* line 256, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.point .checkbox {
+  display: none;
+}
+
+/* line 260, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.point .brand-point {
+  vertical-align: middle;
+}
+
+/* line 263, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.point .brand-point::before {
+  content: '';
+  width: 13px;
+  height: 13px;
+  border: 1px solid #909090;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* line 277, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.checkbox:checked + label::before {
+  border: 1px solid #6F6E6D;
+  background-color: #6F6E6D;
+  background-image: url(../img/checked.svg);
+}
+
+/* line 283, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+/* line 287, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch .cost-inactive {
+  width: 230px;
+  height: 1px;
+  display: block;
+  background-color: #BDB9B5;
+  position: relative;
+}
+
+/* line 294, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch .cost-inactive .cost-active {
+  width: 120px;
+  height: 1px;
+  display: block;
+  background-color: #1B1A17;
+  position: absolute;
+  z-index: 10;
+  left: 40px;
+}
+
+/* line 305, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch .cost-button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #1B1A17;
+  position: absolute;
+  top: -5px;
+  z-index: 15;
+  cursor: pointer;
+}
+
+/* line 317, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch .cost-price {
+  position: relative;
+  width: 60px;
+}
+
+/* line 321, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch .cost-price .price-input {
+  width: 60px;
+  border: none;
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(27, 26, 23, 0.82);
+  padding: 0px 15px 0px 5px;
+}
+
+/* line 331, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch .cost-price::after {
+  content: url(../img/ruble-small.svg);
+  display: inline-block;
+  position: absolute;
+  width: 6px;
+  height: 8px;
+  left: 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 342, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch .min-price {
+  left: 18px;
+  top: 5px;
+}
+
+/* line 347, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch .max-price {
+  left: 138px;
+  bottom: 15px;
+}
+
+/* line 352, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch .left-switch {
+  left: 35px;
+}
+
+/* line 356, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch .right-switch {
+  right: 70px;
+}
+
+/* line 361, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.filter-reset {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: #1D1A1A;
+  border: 2px solid #E7E0CF;
+  padding: 25px 10px;
+  width: 230px;
+}
+
+/* line 371, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.products {
+  width: 840px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* line 378, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.products .banner {
+  background-image: url(../img/banner_catalog.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 384, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.products-item {
+  width: 250px;
+  min-height: 305px;
+  padding: 20px;
+  background-color: #FDFDFB;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* line 392, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.products-item .header-products {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  width: 210px;
+}
+
+/* line 398, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.products-item .header-products .products-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444240;
+  width: 150px;
+  word-break: break-all;
+  position: relative;
+}
+
+/* line 407, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.products-item .header-products .product-button {
+  width: 20px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 413, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.products-item .header-products .addcart-product {
+  background-image: url(../img/cart.svg);
+}
+
+/* line 417, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.products-item .header-products .add-favorites-product {
+  background-image: url(../img/addfavorites.svg);
+  margin-right: 15px;
+  margin-left: auto;
+}
+
+/* line 422, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.products-item .header-products .add-favorites-product:active {
+  background-image: url(../img/addfavorites-active.svg);
+}
+
+/* line 428, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.products-item .products-price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #636261;
+  position: absolute;
+  bottom: -20px;
+}
+
+/* line 435, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.products-item .products-price .ruble-products {
+  width: 6px;
+  height: 9px;
+  background-image: url(../img/ruble-small.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+/* line 444, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.products-item .product-photo {
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+/* line 453, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch-pages {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-bottom: 75px;
+}
+
+/* line 461, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch-pages .pages {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #B6B6B6;
+}
+
+/* line 466, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch-pages .pages:hover {
+  color: #1B1A17;
+}
+
+/* line 471, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch-pages .active-page {
+  color: #1B1A17;
+}
+
+/* line 475, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch-pages .preview-page {
+  background-image: url(../img/preview-page.svg);
+}
+
+/* line 479, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch-pages .next-page {
+  background-image: url(../img/next-page.svg);
+}
+
+/* line 483, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.switch-pages .page-button {
+  width: 10px;
+  height: 20px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 492, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.call-to-action {
+  background-image: url(../img/background-form.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 66px 0px 88px 0px;
+  background-color: rgba(234, 228, 213, 0.38);
+}
+
+/* line 500, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.form-container {
+  display: flex;
+}
+
+/* line 503, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.form-container .form-subscribe {
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+/* line 507, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.form-container .form-subscribe .subscribe-field {
+  border: none;
+  border-bottom: 1px solid #1B1A17;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444240;
+  padding: 22px 5px 22px 0px;
+  width: 280px;
+  margin-right: 33px;
+  background-color: transparent;
+}
+
+/* line 519, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.form-container .form-subscribe .subscribe-button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFF;
+  padding: 25px 5px;
+  width: 185px;
+  background-color: #31302C;
+  cursor: pointer;
+}
+
+/* line 533, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.form-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #BDB9B5;
+  margin-bottom: 15px;
+}
+
+/* line 542, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.form-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 60px;
+  letter-spacing: 0.03em;
+  color: #1B1A17;
+  width: 510px;
+  word-break: break-all;
+}
+
+/* line 552, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.view {
+  padding: 80px 0px;
+}
+
+/* line 556, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.view-products {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* line 561, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.view-products .preview-product {
+  background-image: url(../img/arrow-preview.png);
+  top: 170px;
+  left: -45px;
+}
+
+/* line 567, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.view-products .next-product {
+  background-image: url(../img/arrow-next.png);
+  top: 170px;
+  right: -45px;
+}
+
+/* line 573, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.view-products .photo-button {
+  position: absolute;
+  width: 30px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 581, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.view-item {
+  width: 360px;
+  min-height: 375px;
+  margin-bottom: 0;
+}
+
+/* line 586, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.view-item .view-header {
+  width: 320px;
+}
+
+/* line 589, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.view-item .view-header .view-name {
+  width: 240px;
+}
+
+/* line 595, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.view-title {
+  position: relative;
+}
+
+/* line 598, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.view-title .view-button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444240;
+  border: none;
+  border-bottom: 1px solid #BDB9B5;
+  padding: 12px 2px;
+}
+
+/* line 609, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.footer {
+  background-color: #444240;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 65px 0px 115px 0px;
+}
+
+/* line 615, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.footer-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 620, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.footer-column {
+  width: 180px;
+  padding-top: 13px;
+}
+
+/* line 624, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.footer-column:first-child {
+  padding: 0;
+}
+
+/* line 628, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.footer-column .footer-text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 15px;
+  display: block;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* line 636, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.footer-column .logo-footer {
+  margin-bottom: 23px;
+  display: block;
+}
+
+/* line 641, ../../../../../Desktop/курсы frontend/homework15/scss/style.scss */
+.footer-column .footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.07em;
+  color: #FFF;
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
